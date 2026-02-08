@@ -1,0 +1,118 @@
+.downloadCta {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ctaCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-12);
+  padding: var(--space-12);
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%),
+              var(--glass-bg);
+}
+
+.ctaContent {
+  flex: 1;
+  max-width: 600px;
+}
+
+.ctaTitle {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-4);
+}
+
+.ctaDescription {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-8);
+  line-height: 1.7;
+}
+
+.downloadButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.storeButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--black);
+  color: var(--white);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.storeButton:hover {
+  background: var(--gray-800);
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+.storeText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.storeSmall {
+  font-size: var(--font-size-xs);
+  opacity: 0.8;
+}
+
+.storeName {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-semibold);
+}
+
+.qrCode {
+  flex-shrink: 0;
+}
+
+.qrPlaceholder {
+  width: 150px;
+  height: 150px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  color: var(--gray-600);
+}
+
+.qrPlaceholder span {
+  font-size: 2.5rem;
+}
+
+.qrPlaceholder p {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-medium);
+}
+
+@media (max-width: 768px) {
+  .ctaCard {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-8);
+  }
+
+  .ctaContent {
+    max-width: 100%;
+  }
+
+  .downloadButtons {
+    justify-content: center;
+  }
+
+  .qrCode {
+    display: none;
+  }
+}
