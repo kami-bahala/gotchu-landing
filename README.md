@@ -154,11 +154,38 @@ const nextConfig = {
 };
 ```
 
-### Deployment Options
+### GitHub Pages (Current)
 
-- **Vercel**: Recommended platform with zero-configuration deployment
-- **AWS S3 + CloudFront**: Static export with CDN distribution
-- **Docker**: Containerized deployment for orchestrated environments
+> **Note:** This application is temporarily hosted on GitHub Pages. Migration to Firebase Hosting is planned for the upcoming weeks.
+
+The application is configured for automatic deployment to GitHub Pages via GitHub Actions.
+
+**Automatic Deployment:**
+
+1. Push changes to the `main` branch
+2. GitHub Actions builds and deploys automatically
+3. Access at: `https://kami-bahala.github.io/gotchu-landing/`
+
+**Manual Deployment:**
+
+```bash
+# Build with GitHub Pages configuration
+GITHUB_PAGES=true npm run build
+```
+
+**Repository Settings:**
+
+1. Navigate to repository Settings > Pages
+2. Set Source to "GitHub Actions"
+
+### Firebase Hosting (Future)
+
+When migrating to Firebase Hosting:
+
+1. Remove the `basePath` and `assetPrefix` from `next.config.ts`
+2. Install Firebase CLI: `npm install -g firebase-tools`
+3. Initialize Firebase: `firebase init hosting`
+4. Deploy: `firebase deploy --only hosting`
 
 ## Architecture
 
