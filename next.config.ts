@@ -16,10 +16,10 @@ const nextConfig: NextConfig = {
 
   // Base path for GitHub Pages (repository name)
   // Remove this when migrating to Firebase Hosting
-  basePath: isGitHubPages ? "/gotchu-landing" : "",
+  // basePath: isGitHubPages ? "/gotchu-landing" : "",
 
   // Asset prefix for GitHub Pages
-  assetPrefix: isGitHubPages ? "/gotchu-landing/" : "",
+  // assetPrefix: isGitHubPages ? "/gotchu-landing/" : "",
 
   // Disable image optimization (not supported in static export)
   images: {
